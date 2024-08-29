@@ -32,6 +32,10 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Login from './pages/login/login';
+import AdminDashboard from './pages/admin/AdminDashboard';
+import FacultyDashboard from './pages/faculty/FacultyDashboard';
+import StudentDashboard from './pages/student/StudentDashboard';
 
 setupIonicReact();
 
@@ -42,8 +46,20 @@ const App: React.FC = () => (
         <Route exact path="/home">
           <Home />
         </Route>
+        <Route exact path="/login">
+        <Login />
+        </Route>
+        <Route exact path="/admin">
+        <AdminDashboard />
+        </Route>
+        <Route exact path="/faculty">
+        <FacultyDashboard />
+        </Route>
+        <Route exact path="/student">
+        <StudentDashboard />
+        </Route>
         <Route exact path="/">
-          <Redirect to="/home" />
+          <Redirect to="/login" />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
