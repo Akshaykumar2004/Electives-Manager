@@ -13,18 +13,10 @@ Electives-Manager is a web application designed to manage student electives at [
 
 - **Frontend**: Ionic React
 - **Backend**: FastAPI
-- **Database**: (Specify your database if applicable)
+- **Database**: mongodb
 
 ## Prerequisites
 
 - Node.js and npm (for frontend)
 - Python and pip (for backend)
 
-## Setup
-
-### Backend Setup
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/your-username/electives-manager.git
